@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "6e216999-dffe-4e64-891b-c035eeed0df2",
+		"name": "huviringid",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9319536"
+	},
+	"item": [
+		{
+			"name": "GetExtracurriculars",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Returns 4 extracurriculars\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    ",
+							"    pm.expect(jsonData.length).to.eql(4);",
+							"});",
+							"",
+							"pm.test(\"First extracurricular is 'Koor Ellerhein'\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData[0].name).to.eql('Koor Ellerhein');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/Extracurriculars",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"Extracurriculars"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

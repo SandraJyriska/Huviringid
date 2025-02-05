@@ -1,0 +1,32 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: huviringid-db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: parool
+    networks:
+      - pg_net
+
+  pgadmin4:
+    image: dpage/pgadmin4:8
+    container_name: huviringi-pgadmin4
+    ports:
+      - "8082:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@taltech.ee
+      PGADMIN_DEFAULT_PASSWORD: admin
+    networks:
+      - pg_net
+
+networks:
+  pg_net:
+
+volumes:
+  pgadmin_data:
+  postgres_data:

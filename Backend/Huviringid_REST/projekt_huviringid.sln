@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackEnd", "BackEnd", "{FCEB100E-BD71-4F71-929B-A8197B6F082F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Huviringid_REST", "Huviringid_REST.csproj", "{CF637718-023B-4489-9BD9-D4018D964C96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF637718-023B-4489-9BD9-D4018D964C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF637718-023B-4489-9BD9-D4018D964C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF637718-023B-4489-9BD9-D4018D964C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF637718-023B-4489-9BD9-D4018D964C96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CF637718-023B-4489-9BD9-D4018D964C96} = {FCEB100E-BD71-4F71-929B-A8197B6F082F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86ABB301-3833-4CAA-94D7-0FB344088B7D}
+	EndGlobalSection
+EndGlobal
